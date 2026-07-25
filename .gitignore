@@ -1,0 +1,4 @@
+node_modules/
+_wizualna/
+*.log
+.DS_Store

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Living Europe — bezpłatna analiza działek pod budownictwo społeczne</title>
+<meta name="description" content="Bezpłatna wstępna analiza gruntów pod budownictwo społeczne i komunalne — demografia, infrastruktura, koszty, model zabudowy i montaż finansowy. Wybranym projektom zapewniamy finansowanie, wkład własny i prowadzenie rozmów z samorządem.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'IBM Plex Sans',system-ui,sans-serif;color:#12312A;background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:inherit;text-decoration:none}
+  ::-webkit-scrollbar{width:11px;height:11px}
+  ::-webkit-scrollbar-thumb{background:#C7D0DC;border-radius:6px;border:3px solid #fff}
+  #stickyCta{display:none}
+  @media (max-width:720px){
+    #stickyCta{display:flex}
+    #navCta{display:none}
+    body{padding-bottom:78px}
+  }
+</style>
+</head>
+<body>
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+  <!-- ============ NAV ============ -->
+  <header style="position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid #EEF1F5">
+    <div style="max-width:1180px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;gap:22px">
+      <a href="#top" style="display:flex;align-items:center;gap:12px">
+        <img src="logo-sle.png" alt="Social Living Europe" style="width:40px;height:40px;object-fit:contain;object-position:top;flex-shrink:0">
+        <div style="line-height:1.05">
+          <div style="font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:19px;color:#12312A;letter-spacing:.01em">Social Living</div>
+          <div style="font-size:9.5px;letter-spacing:.28em;color:#C89B4A;margin-top:3px;text-transform:uppercase;font-weight:600">Europe</div>
+        </div>
+      </a>
+      <nav style="flex:1;display:flex;align-items:center;justify-content:center;gap:26px;flex-wrap:wrap;row-gap:4px">
+        <a href="#jak" style="font-size:13.5px;color:#3A4D6B;font-weight:500;white-space:nowrap">Jak to działa</a>
+        <a href="#finansowanie" style="font-size:13.5px;color:#3A4D6B;font-weight:500;white-space:nowrap">Finansowanie</a>
+        <a href="#samorzad" style="font-size:13.5px;color:#3A4D6B;font-weight:500;white-space:nowrap">Rola gminy</a>
+        <a href="#skala" style="font-size:13.5px;color:#3A4D6B;font-weight:500;white-space:nowrap">Skala programów</a>
+        <a href="#dlakogo" style="font-size:13.5px;color:#3A4D6B;font-weight:500;white-space:nowrap">Dla kogo</a>
+        <a href="#faq" style="font-size:13.5px;color:#3A4D6B;font-weight:500;white-space:nowrap">FAQ</a>
+      </nav>
+      <a id="navCta" href="#formularz" style="display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 18px;background:#0F4A38;color:#fff;border-radius:9px;font-size:13.5px;font-weight:600;white-space:nowrap">Sprawdź działkę za darmo</a>
+    </div>
+  </header>
+
+  <main id="top" style="flex:1">
+
+    <!-- ============ 1. HERO ============ -->
+    <section style="position:relative;overflow:hidden;background:#0C2A21">
+      <div style="position:absolute;inset:0;background:radial-gradient(1100px 620px at 62% -10%,#174535 0%,#0E3328 48%,#071B15 100%)"></div>
+      <div style="position:absolute;inset:0;background-image:url('szkic-budynku-mieta.png');background-size:118% auto;background-position:center 84%;background-repeat:no-repeat;opacity:.22"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,21,38,.35),rgba(10,21,38,.10) 40%,rgba(10,21,38,.62))"></div>
+
+      <div style="position:relative;max-width:1180px;margin:0 auto;padding:66px 28px 62px;display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:52px;align-items:center">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border:1px solid rgba(255,255,255,.22);border-radius:22px;background:rgba(255,255,255,.07);margin-bottom:24px">
+            <span style="width:7px;height:7px;border-radius:50%;background:#C89B4A"></span>
+            <span style="font-size:12.5px;color:#CFE0F1;font-weight:500">Wyłącznie budownictwo społeczne i komunalne · najem o umiarkowanym czynszu</span>
+          </div>
+          <h1 style="margin:0;font-size:46px;line-height:1.07;font-weight:600;letter-spacing:-.025em;color:#fff">Nawet do 100% finansowania<br>Twojego projektu<br><span style="color:#C89B4A">mieszkalnictwa społecznego</span><a href="#zastrzezenia" style="color:#C89B4A;font-size:26px;vertical-align:super">*</a></h1>
+          <p style="margin:20px 0 0;font-size:16.5px;line-height:1.6;color:#AFC0D6;max-width:530px">Analizujemy grunty pod budownictwo społeczne i komunalne — demografia, infrastruktura, koszty, model zabudowy i montaż finansowy. <b style="color:#E7EEF6;font-weight:600">Wybranym projektom zapewniamy finansowanie — również wkład własny<a href="#zastrzezenia" style="color:#C89B4A">*</a>.</b></p>
+
+          <div style="display:flex;align-items:center;gap:13px;margin-top:28px;flex-wrap:wrap">
+            <a href="#formularz" style="display:inline-flex;align-items:center;gap:9px;height:54px;padding:0 26px;background:#0F4A38;color:#fff;border-radius:11px;font-size:16px;font-weight:600;box-shadow:0 6px 20px rgba(15,74,56,.35)">Sprawdź działkę za darmo <span style="opacity:.8">→</span></a>
+            <a href="#jak" style="display:inline-flex;align-items:center;height:54px;padding:0 22px;border:1px solid rgba(255,255,255,.28);border-radius:11px;font-size:15px;font-weight:500;color:#E7EEF6">Zobacz, jak to działa</a>
+          </div>
+          <div style="display:flex;align-items:center;gap:18px;margin-top:22px;flex-wrap:wrap">
+            <span style="display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:#8FA3BE"><span style="color:#C89B4A">✓</span>Dane publiczne (GUS, plany miejscowe, mapy)</span>
+            <span style="display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:#8FA3BE"><span style="color:#C89B4A">✓</span>Bez zobowiązań</span>
+            <span style="display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:#8FA3BE"><span style="color:#C89B4A">✓</span>Wynik od ręki · rozmowy z gminą po naszej stronie</span>
+          </div>
+        </div>
+
+        <!-- FORMULARZ startowy -->
+        <div id="formularz" style="background:#fff;border-radius:16px;box-shadow:0 26px 64px rgba(4,12,24,.45);overflow:hidden">
+          <div style="padding:20px 22px;border-bottom:1px solid #EEF1F5">
+            <div style="font-size:17px;font-weight:600">Bezpłatna analiza działki</div>
+            <div style="font-size:13px;color:#6B7A92;margin-top:4px;line-height:1.45">Wystarczy numer działki albo lokalizacja. Wynik od ręki, bez zobowiązań.</div>
+          </div>
+          <form action="#kontakt" style="padding:22px" onsubmit="return true">
+            <label style="display:block">
+              <span style="display:block;font-size:13px;color:#6B7A92;margin-bottom:6px;font-weight:500">Numer działki lub lokalizacja</span>
+              <input type="text" name="dzialka" placeholder="142/7, Mysiadło" autocomplete="off" style="width:100%;height:52px;border:1px solid #C7D0DC;border-radius:11px;padding:0 15px;font-family:'IBM Plex Mono',monospace;font-size:15px;color:#12312A;background:#fff;outline:none">
+            </label>
+            <button type="submit" style="width:100%;display:flex;align-items:center;justify-content:center;gap:9px;height:54px;margin-top:14px;background:#0F4A38;color:#fff;border:none;border-radius:11px;font-family:inherit;font-size:16px;font-weight:600;cursor:pointer">Sprawdź działkę za darmo <span style="opacity:.8">→</span></button>
+            <div style="display:flex;align-items:flex-start;gap:9px;margin-top:14px;font-size:12px;color:#8E9BAE;line-height:1.5">
+              <span style="width:6px;height:6px;border-radius:50%;background:#0F4A38;flex-shrink:0;margin-top:5px"></span>
+              Analiza opiera się na danych publicznych (GUS, plany miejscowe, mapy). Nie wymaga rejestracji ani dokumentów.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. HAK / PROBLEM ============ -->
+    <section style="max-width:1180px;margin:0 auto;padding:74px 28px 10px">
+      <div style="max-width:840px;margin-bottom:42px">
+        <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.2;text-wrap:balance">Nie każda działka nadaje się pod mieszkalnictwo społeczne. My mówimy Ci to <span style="color:#0F4A38">zanim</span> wydasz pieniądze.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px">
+        <div style="border:1px solid #DFE6E2;border-radius:14px;padding:24px;background:#fff;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+          <div style="width:44px;height:44px;border-radius:11px;background:#EAF4EF;color:#0F4A38;display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:16px">◎</div>
+          <div style="font-size:17px;font-weight:600;margin-bottom:7px">Potencjał</div>
+          <div style="font-size:14px;color:#5C6B82;line-height:1.55">Czy w tej lokalizacji jest realny popyt na mieszkania społeczne — demografia, usługi, dostępność.</div>
+        </div>
+        <div style="border:1px solid #DFE6E2;border-radius:14px;padding:24px;background:#fff;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+          <div style="width:44px;height:44px;border-radius:11px;background:#EAF4EF;color:#0F4A38;display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:16px">∑</div>
+          <div style="font-size:17px;font-weight:600;margin-bottom:7px">Finansowanie</div>
+          <div style="font-size:14px;color:#5C6B82;line-height:1.55">Ile bezzwrotnego wsparcia i taniego kredytu może przyciągnąć projekt na tej działce.</div>
+        </div>
+        <div style="border:1px solid #DFE6E2;border-radius:14px;padding:24px;background:#fff;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+          <div style="width:44px;height:44px;border-radius:11px;background:#EAF4EF;color:#0F4A38;display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:16px">▤</div>
+          <div style="font-size:17px;font-weight:600;margin-bottom:7px">Model zabudowy</div>
+          <div style="font-size:14px;color:#5C6B82;line-height:1.55">Co i w jakiej skali opłaca się tu zbudować — liczba mieszkań, kondygnacje, mix metraży.</div>
+        </div>
+      </div>
+      <div style="margin-top:26px">
+        <a href="#formularz" style="display:inline-flex;align-items:center;gap:9px;height:50px;padding:0 24px;background:#0F4A38;color:#fff;border-radius:11px;font-size:15px;font-weight:600">Sprawdź swoją działkę <span style="opacity:.8">→</span></a>
+      </div>
+    </section>
+
+    <!-- ============ 3. JAK TO DZIAŁA ============ -->
+    <section id="jak" style="background:#EDF2EF;border-top:1px solid #DCE6E1;border-bottom:1px solid #DCE6E1;margin-top:74px">
+      <div style="max-width:1180px;margin:0 auto;padding:66px 28px">
+        <div style="max-width:720px;margin-bottom:42px">
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Jak to działa</div>
+          <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Od działki do gotowego montażu finansowego — w trzech krokach.</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px">
+          <div style="background:#fff;border:1px solid #DFE6E2;border-radius:14px;padding:24px;position:relative">
+            <div style="display:flex;align-items:center;gap:13px;margin-bottom:15px">
+              <div style="width:42px;height:42px;border-radius:11px;background:#12312A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600">1</div>
+              <div style="font-size:17px;font-weight:600">Wpisz działkę</div>
+            </div>
+            <div style="font-size:14px;color:#5C6B82;line-height:1.55">Numer działki wystarczy. Dostajesz natychmiastowy, bezpłatny przegląd potencjału.</div>
+          </div>
+          <div style="background:#fff;border:1px solid #DFE6E2;border-radius:14px;padding:24px;position:relative">
+            <div style="display:flex;align-items:center;gap:13px;margin-bottom:15px">
+              <div style="width:42px;height:42px;border-radius:11px;background:#12312A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600">2</div>
+              <div style="font-size:17px;font-weight:600">Uzupełnij dane</div>
+            </div>
+            <div style="font-size:14px;color:#5C6B82;line-height:1.55">Kilka pytań pogłębia ocenę — infrastruktura, plan miejscowy, dostęp do drogi.</div>
+          </div>
+          <div style="background:#fff;border:1px solid #DFE6E2;border-radius:14px;padding:24px;position:relative">
+            <div style="display:flex;align-items:center;gap:13px;margin-bottom:15px">
+              <div style="width:42px;height:42px;border-radius:11px;background:#12312A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600">3</div>
+              <div style="font-size:17px;font-weight:600">Dostajesz ocenę i ścieżkę finansowania</div>
+            </div>
+            <div style="font-size:14px;color:#5C6B82;line-height:1.55">Wybrane projekty zapraszamy do pełnej analizy i finansowania<a href="#zastrzezenia" style="color:#0F4A38">*</a>.</div>
+          </div>
+        </div>
+        <div style="margin-top:26px">
+          <a href="#formularz" style="display:inline-flex;align-items:center;gap:9px;height:50px;padding:0 24px;background:#0F4A38;color:#fff;border-radius:11px;font-size:15px;font-weight:600">Zacznij od kroku 1 — za darmo <span style="opacity:.8">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. FINANSOWANIE ============ -->
+    <section id="finansowanie" style="max-width:1180px;margin:0 auto;padding:74px 28px 0">
+      <div style="max-width:800px;margin-bottom:38px">
+        <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Finansowanie</div>
+        <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Nawet do 100% kosztu projektu<br>ze źródeł zewnętrznych — plus nasz wkład własny<a href="#zastrzezenia" style="color:#0F4A38;font-size:22px;vertical-align:super">*</a></h2>
+        <p style="margin:18px 0 0;font-size:16px;color:#5C6B82;line-height:1.6">Budownictwo społeczne i komunalne korzysta z <b style="color:#12312A;font-weight:600">bezzwrotnych grantów</b>, <b style="color:#12312A;font-weight:600">kredytu preferencyjnego</b> (stałe niskie oprocentowanie, długi okres) i <b style="color:#12312A;font-weight:600">partycypacji najemców</b>. Dobrze ułożony montaż potrafi pokryć prawie cały koszt przedsięwzięcia — Twój wkład własny może zejść do minimum, zwłaszcza gdy grunt wnosisz aportem.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px">
+        <div style="border:1px solid #DFE6E2;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+          <div style="height:4px;background:#0F4A38"></div>
+          <div style="padding:22px 24px 24px">
+            <div style="font-size:17px;font-weight:600;margin-bottom:12px">Grant bezzwrotny</div>
+            <div style="font-size:32px;font-weight:600;color:#12312A;font-variant-numeric:tabular-nums;letter-spacing:-.015em">do 35–80%<a href="#zastrzezenia" style="color:#0F4A38;font-size:18px;vertical-align:super">*</a></div>
+            <div style="font-size:13.5px;color:#5C6B82;line-height:1.55;margin-top:10px">Do 35% kosztów dla budownictwa społecznego (z umową z gminą), do 80% dla komunalnego przy większości gminy.</div>
+          </div>
+        </div>
+        <div style="border:1px solid #DFE6E2;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+          <div style="height:4px;background:#C89B4A"></div>
+          <div style="padding:22px 24px 24px">
+            <div style="font-size:17px;font-weight:600;margin-bottom:12px">Kredyt preferencyjny</div>
+            <div style="font-size:32px;font-weight:600;color:#12312A;font-variant-numeric:tabular-nums;letter-spacing:-.015em">30 lat · 1–2%<a href="#zastrzezenia" style="color:#0F4A38;font-size:18px;vertical-align:super">*</a></div>
+            <div style="font-size:13.5px;color:#5C6B82;line-height:1.55;margin-top:10px">Stałe, niskie oprocentowanie 1–2% i okres spłaty do 30 lat. Spłacany z czynszu — obsługa długu rozłożona na dekady.</div>
+          </div>
+        </div>
+        <div style="border:1px solid #DFE6E2;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+          <div style="height:4px;background:#6E8BB0"></div>
+          <div style="padding:22px 24px 24px">
+            <div style="font-size:17px;font-weight:600;margin-bottom:12px">Partycypacja najemców</div>
+            <div style="font-size:32px;font-weight:600;color:#12312A;font-variant-numeric:tabular-nums;letter-spacing:-.015em">do 30%<a href="#zastrzezenia" style="color:#0F4A38;font-size:18px;vertical-align:super">*</a></div>
+            <div style="font-size:13.5px;color:#5C6B82;line-height:1.55;margin-top:10px">Wkład najemców zastępuje Twój kapitał własny w montażu finansowym.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WKŁAD WŁASNY -->
+      <div id="zastrzezenia" style="display:flex;gap:22px;align-items:flex-start;margin-top:30px;padding:32px 34px;background:linear-gradient(135deg,#0F4A38,#0C3A2C);border-radius:16px;box-shadow:0 16px 40px rgba(12,49,42,.30)">
+        <div style="width:44px;height:44px;border-radius:12px;background:#C89B4A;color:#08201A;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;flex-shrink:0;line-height:1">+</div>
+        <div>
+          <div style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#C89B4A;font-weight:700;margin-bottom:9px">Nasza rola w projekcie</div>
+          <div style="font-size:27px;font-weight:600;color:#fff;margin-bottom:12px;letter-spacing:-.015em;line-height:1.18;text-wrap:balance">Do wybranych projektów zapewniamy również <span style="color:#E3C089">wkład własny</span><a href="#stopka-zastrzezenia" style="color:#C89B4A;font-size:18px;vertical-align:super">*</a></div>
+          <div style="font-size:15.5px;color:#CFE0D8;line-height:1.6;max-width:760px">Jeśli projekt przejdzie naszą analizę, możemy wejść nie tylko z montażem finansowym, ale też z <b style="color:#fff;font-weight:600">brakującym wkładem własnym</b> — tam, gdzie grant, kredyt preferencyjny i partycypacja nie pokrywają całości. Dotyczy to <b style="color:#fff;font-weight:600">budownictwa społecznego</b> (najem o umiarkowanym czynszu), nie mieszkań na sprzedaż.</div>
+          <div style="font-size:12.5px;color:#93AFA3;line-height:1.55;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16)">Poziomy „do 100%” i „do 35/80%” są maksymalne i warunkowe; wkład własny zapewniamy <b style="color:#CFE0D8">wybranym projektom</b> po kwalifikacji. Pełne zastrzeżenia w <a href="#stopka-zastrzezenia" style="color:#C89B4A;font-weight:600">stopce</a>.</div>
+        </div>
+      </div>
+
+      <div style="margin-top:26px">
+        <a href="#formularz" style="display:inline-flex;align-items:center;gap:9px;height:50px;padding:0 24px;background:#0F4A38;color:#fff;border-radius:11px;font-size:15px;font-weight:600">Sprawdź, na jakie finansowanie kwalifikuje się Twoja działka <span style="opacity:.8">→</span></a>
+      </div>
+    </section>
+
+    <!-- ============ 4b. WSPÓŁPRACA Z SAMORZĄDEM ============ -->
+    <section id="samorzad" style="background:#F4F8F6;border-top:1px solid #DCE6E1;border-bottom:1px solid #DCE6E1;margin-top:74px"><div style="max-width:1180px;margin:0 auto;padding:66px 28px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:44px;align-items:start">
+        <div>
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Warunek konieczny</div>
+          <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Bez samorządu nie ma budownictwa społecznego.<br><span style="color:#0F4A38">Te rozmowy prowadzimy za Ciebie.</span></h2>
+          <p style="margin:18px 0 0;font-size:16px;color:#5C6B82;line-height:1.6">Finansowanie budownictwa społecznego i komunalnego jest dostępne <b style="color:#12312A;font-weight:600">wyłącznie we współpracy z gminą</b> — grant wymaga umowy z samorządem, a poziom wsparcia zależy od jej formy. To nie formalność: od tego, jak ułożysz relację z gminą, zależy czy projekt dostanie 35% czy 80% bezzwrotnego wsparcia.</p>
+          <p style="margin:14px 0 0;font-size:16px;color:#5C6B82;line-height:1.6"><b style="color:#12312A;font-weight:600">Nie zostawiamy Cię z tym sam.</b> Przygotowujemy materiał dla gminy, wskazujemy właściwą formę współpracy i <b style="color:#12312A;font-weight:600">prowadzimy rozmowy z samorządem</b> — od pierwszego kontaktu do ustaleń, na których opiera się montaż finansowy.</p>
+          <div style="margin-top:26px">
+            <a href="#formularz" style="display:inline-flex;align-items:center;gap:9px;height:50px;padding:0 24px;background:#0F4A38;color:#fff;border-radius:11px;font-size:15px;font-weight:600">Sprawdź działkę za darmo <span style="opacity:.8">→</span></a>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;gap:15px;align-items:flex-start;background:#fff;border:1px solid #DFE6E2;border-radius:13px;padding:18px 20px;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+            <div style="width:34px;height:34px;border-radius:9px;background:#EAF4EF;color:#0F4A38;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;flex-shrink:0">1</div>
+            <div>
+              <div style="font-size:15.5px;font-weight:600;margin-bottom:5px">Umowa z gminą otwiera grant</div>
+              <div style="font-size:13.5px;color:#5C6B82;line-height:1.55">Bezzwrotne wsparcie dla budownictwa społecznego wymaga porozumienia z samorządem — bez niego montaż się nie domyka.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:15px;align-items:flex-start;background:#fff;border:1px solid #DFE6E2;border-radius:13px;padding:18px 20px;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+            <div style="width:34px;height:34px;border-radius:9px;background:#EAF4EF;color:#0F4A38;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;flex-shrink:0">2</div>
+            <div>
+              <div style="font-size:15.5px;font-weight:600;margin-bottom:5px">Forma współpracy = poziom wsparcia</div>
+              <div style="font-size:13.5px;color:#5C6B82;line-height:1.55">Aport gruntu, „lokal za grunt”, ZPI, udział kapitałowy — każda ścieżka daje inny pułap grantu. Wskazujemy optymalną.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:15px;align-items:flex-start;background:#fff;border:1px solid #DFE6E2;border-radius:13px;padding:18px 20px;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+            <div style="width:34px;height:34px;border-radius:9px;background:#EAF4EF;color:#0F4A38;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;flex-shrink:0">3</div>
+            <div>
+              <div style="font-size:15.5px;font-weight:600;margin-bottom:5px">Przygotowujemy materiał dla gminy</div>
+              <div style="font-size:13.5px;color:#5C6B82;line-height:1.55">Gmina dostaje gotowe studium: potencjał, model zabudowy, montaż i korzyść dla mieszkańców — nie luźny pomysł.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:15px;align-items:flex-start;background:#fff;border:1px solid #DFE6E2;border-radius:13px;padding:18px 20px;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
+            <div style="width:34px;height:34px;border-radius:9px;background:#EAF4EF;color:#0F4A38;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;flex-shrink:0">4</div>
+            <div>
+              <div style="font-size:15.5px;font-weight:600;margin-bottom:5px">Prowadzimy rozmowy z samorządem</div>
+              <div style="font-size:13.5px;color:#5C6B82;line-height:1.55">Uczestniczymy w spotkaniach i negocjacjach, aż do ustaleń, na których można oprzeć wniosek o finansowanie.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:16px 18px;background:#F7FBF9;border:1px solid #0F4A3833;border-radius:13px">
+            <span style="width:8px;height:8px;border-radius:50%;background:#0F4A38;flex-shrink:0;margin-top:6px"></span>
+            <div style="font-size:13px;color:#3A4D6B;line-height:1.55"><b style="color:#0C3A2C;font-weight:600">Także mniejsze gminy.</b> Nie musisz mieć kontaktów w dużym mieście — rozmawiamy również z małymi samorządami, gdzie potrzeba mieszkań jest największa.</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ 5+6. SKALA PL / EU ============ -->
+    <section id="skala" style="background:#0C2A21;position:relative;overflow:hidden">
+      <div style="position:absolute;inset:0;background:radial-gradient(900px 500px at 78% -20%,#174535 0%,#0E3328 50%,#071B15 100%)"></div>
+      <div style="position:relative;max-width:1180px;margin:0 auto;padding:66px 28px 70px">
+
+        <div style="max-width:780px;margin-bottom:38px">
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#C89B4A;font-weight:600;margin-bottom:12px">Skala programów · Polska</div>
+          <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16;color:#fff">Publiczne pieniądze na mieszkania już są w systemie.</h2>
+          <p style="margin:14px 0 0;font-size:15.5px;color:#AFC0D6;line-height:1.6">Pytanie nie brzmi „czy jest finansowanie”, ale „czy Twoja działka do niego pasuje”.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">8,7 mld zł</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Wsparcie budownictwa społecznego — skala programowa</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">BGK / MRiT</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">4,02 mld zł</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Fundusz Dopłat — bezzwrotne wsparcie gmin</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">BGK</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">~18 tys.</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Mieszkań w przygotowaniu w programach społecznych</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">MRiT</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">~900</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Lokalizacji objętych programami</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">MRiT / SIM</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">do 10 mld zł</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Rocznie do 2030 — docelowy limit wydatków budżetowych na ten cel (deklaracja rządowa)</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">Rada Ministrów / MRiT</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">do 4 mln</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Rodzin w zasięgu polityki mieszkaniowej</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">GUS / MRiT</div>
+          </div>
+        </div>
+
+        <div style="max-width:780px;margin:52px 0 32px;padding-top:44px;border-top:1px solid rgba(255,255,255,.12)">
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#C89B4A;font-weight:600;margin-bottom:12px">Skala programów · Europa</div>
+          <h2 style="margin:0;font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.18;color:#fff">Mieszkalnictwo dostępne to dziś priorytet europejski.</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:16px">
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">6 mld €</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">EBI na mieszkalnictwo dostępne (2026)</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">EIB</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">EBI + BGK</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Wspólny program finansowania dla Polski</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">EIB / BGK</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">Plan UE</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Europejski Plan Dostępnych Mieszkań</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">KE</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">372 mld €</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">InvestEU — mobilizacja inwestycji</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">KE / EIB</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
+            <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">EBOR</div>
+            <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Finansowanie infrastruktury i mieszkalnictwa</div>
+            <div style="font-size:11px;color:#7D93B0;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.10);font-family:'IBM Plex Mono',monospace">EBRD</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:#7D93B0;margin-top:20px;line-height:1.55;max-width:820px">Kwoty programowe podane wg komunikatów instytucji — patrz <a href="#zrodla" style="color:#C89B4A">źródła</a>. Nie oznaczają środków przypisanych do konkretnego projektu.</div>
+      </div>
+    </section>
+
+    <!-- ============ 7. DLA KOGO ============ -->
+    <section id="dlakogo" style="max-width:1180px;margin:0 auto;padding:74px 28px 0">
+      <div style="max-width:720px;margin-bottom:40px">
+        <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Dla kogo</div>
+        <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Dla każdego, kto ma grunt albo szuka projektu.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:20px">
+        <div style="position:relative;border:1px solid #DFE6E2;border-radius:14px;padding:24px;background:#fff;box-shadow:0 1px 2px rgba(20,38,63,.04)">
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:13px">
+            <div style="width:42px;height:42px;border-radius:11px;background:#EEF1F5;color:#3A4D6B;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">⌂</div>
+            <div style="font-size:18px;font-weight:600">Właściciele działek</div>
+          </div>
+          <div style="font-size:14.5px;color:#5C6B82;line-height:1.55;margin-bottom:16px">Masz ziemię, nie masz pomysłu na finansowanie? Sprawdź, czy nadaje się pod dofinansowane mieszkania.</div>
+          <a href="#formularz" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#12312A">Analizuj działkę <span style="opacity:.7">→</span></a>
+        </div>
+        <div style="position:relative;border:1px solid #DFE6E2;border-radius:14px;padding:24px;background:#fff;box-shadow:0 1px 2px rgba(20,38,63,.04)">
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:13px">
+            <div style="width:42px;height:42px;border-radius:11px;background:#EEF1F5;color:#3A4D6B;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">◈</div>
+            <div style="font-size:18px;font-weight:600">Inwestorzy</div>
+          </div>
+          <div style="font-size:14.5px;color:#5C6B82;line-height:1.55;margin-bottom:16px">Zbuduj mieszkania przy minimalnym wkładzie własnym. Pokażemy montaż finansowy krok po kroku.</div>
+          <a href="#formularz" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#12312A">Zobacz montaż finansowy <span style="opacity:.7">→</span></a>
+        </div>
+        <div style="position:relative;border:1px solid #DFE6E2;border-radius:14px;padding:24px;background:#fff;box-shadow:0 1px 2px rgba(20,38,63,.04)">
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:13px">
+            <div style="width:42px;height:42px;border-radius:11px;background:#EEF1F5;color:#3A4D6B;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">▦</div>
+            <div style="font-size:18px;font-weight:600">Biura nieruchomości</div>
+          </div>
+          <div style="font-size:14.5px;color:#5C6B82;line-height:1.55;margin-bottom:16px">Dodatkowa wartość i mocny argument sprzedażowy dla działek Twoich klientów.</div>
+          <a href="#formularz" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#12312A">Współpraca dla biur <span style="opacity:.7">→</span></a>
+        </div>
+        <div style="position:relative;border:1.5px solid #0F4A38;border-radius:14px;padding:24px;background:#F7FBF9;box-shadow:0 8px 24px rgba(15,74,56,.10)">
+          <div style="position:absolute;top:18px;right:20px;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#0F4A38;background:#EAF4EF;padding:4px 10px;border-radius:20px">Nasza przewaga</div>
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:13px">
+            <div style="width:42px;height:42px;border-radius:11px;background:#0F4A38;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">⬢</div>
+            <div style="font-size:18px;font-weight:600">Gminy — także mniejsze</div>
+          </div>
+          <div style="font-size:14.5px;color:#5C6B82;line-height:1.55;margin-bottom:16px">Interesują nas również mniejsze gminy. Nie musisz być dużym miastem, żeby zbudować potrzebne mieszkania.</div>
+          <a href="#formularz" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#0F4A38">Dla samorządów <span style="opacity:.7">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. DLACZEGO MY ============ -->
+    <section style="background:#EDF2EF;border-top:1px solid #DCE6E1;border-bottom:1px solid #DCE6E1;margin-top:74px">
+      <div style="max-width:1180px;margin:0 auto;padding:66px 28px">
+        <div style="max-width:720px;margin-bottom:40px">
+          <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Dlaczego my</div>
+          <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Najpierw fakty, potem decyzja.</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+          <div>
+            <div style="width:38px;height:38px;border-radius:10px;background:#fff;border:1px solid #DFE6E2;display:flex;align-items:center;justify-content:center;font-size:16px;color:#0F4A38;margin-bottom:14px">⊘</div>
+            <div style="font-size:16px;font-weight:600;margin-bottom:7px">Sito, nie sprzedaż na siłę</div>
+            <div style="font-size:13.5px;color:#5C6B82;line-height:1.55">Najpierw bezpłatnie mówimy, czy w ogóle warto. Jeśli działka nie rokuje — powiemy to wprost.</div>
+          </div>
+          <div>
+            <div style="width:38px;height:38px;border-radius:10px;background:#fff;border:1px solid #DFE6E2;display:flex;align-items:center;justify-content:center;font-size:16px;color:#0F4A38;margin-bottom:14px">▤</div>
+            <div style="font-size:16px;font-weight:600;margin-bottom:7px">Twarde dane</div>
+            <div style="font-size:13.5px;color:#5C6B82;line-height:1.55">GUS, plany miejscowe, mapy środowiskowe, realne stawki wsparcia — nie szacunki „na oko”.</div>
+          </div>
+          <div>
+            <div style="width:38px;height:38px;border-radius:10px;background:#fff;border:1px solid #DFE6E2;display:flex;align-items:center;justify-content:center;font-size:16px;color:#0F4A38;margin-bottom:14px">✓</div>
+            <div style="font-size:16px;font-weight:600;margin-bottom:7px">Uczciwość zamiast obietnic</div>
+            <div style="font-size:13.5px;color:#5C6B82;line-height:1.55">Pokazujemy też, czego nie zweryfikowaliśmy i co trzeba potwierdzić przed decyzją.</div>
+          </div>
+          <div>
+            <div style="width:38px;height:38px;border-radius:10px;background:#fff;border:1px solid #DFE6E2;display:flex;align-items:center;justify-content:center;font-size:16px;color:#0F4A38;margin-bottom:14px">◎</div>
+            <div style="font-size:16px;font-weight:600;margin-bottom:7px">Znajomość programów</div>
+            <div style="font-size:13.5px;color:#5C6B82;line-height:1.55">SIM, Fundusz Dopłat, kredyt preferencyjny, formy współpracy z gminą — znamy warunki.</div>
+          </div>
+        </div>
+        <div style="margin-top:34px">
+          <a href="#formularz" style="display:inline-flex;align-items:center;gap:9px;height:50px;padding:0 24px;background:#0F4A38;color:#fff;border-radius:11px;font-size:15px;font-weight:600">Sprawdź działkę za darmo <span style="opacity:.8">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. FAQ ============ -->
+    <section id="faq" style="background:#fff;border-bottom:1px solid #DCE6E1"><div style="max-width:900px;margin:0 auto;padding:66px 28px">
+      <div style="margin-bottom:34px">
+        <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Pytania i odpowiedzi</div>
+        <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em">Zanim zapytasz</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="faq-item" style="border:1px solid #DFE6E2;border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 5px 16px rgba(12,49,42,.09)">
+          <button type="button" class="faq-btn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit">
+            <span style="font-size:16px;font-weight:600;color:#12312A">Czy to naprawdę za darmo?</span>
+            <span class="faq-icon" style="width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:600;background:#F4F6F9;color:#6B7A92;border:1px solid #E2E6EC">+</span>
+          </button>
+          <div class="faq-ans" style="display:none;padding:0 20px 20px;font-size:14.5px;color:#5C6B82;line-height:1.6">Wstępna analiza — tak, bez opłat i bez zobowiązań. Pełna analiza oraz finansowanie dotyczą wybranych projektów, które przeszły kwalifikację.</div>
+        </div>
+        <div class="faq-item" style="border:1px solid #DFE6E2;border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 5px 16px rgba(12,49,42,.09)">
+          <button type="button" class="faq-btn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit">
+            <span style="font-size:16px;font-weight:600;color:#12312A">Czy „do 100%” jest gwarantowane?</span>
+            <span class="faq-icon" style="width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:600;background:#F4F6F9;color:#6B7A92;border:1px solid #E2E6EC">+</span>
+          </button>
+          <div class="faq-ans" style="display:none;padding:0 20px 20px;font-size:14.5px;color:#5C6B82;line-height:1.6">Nie. To maksymalny, warunkowy poziom finansowania zewnętrznego. Realny poziom zależy od projektu, lokalizacji, formy współpracy z gminą i spełnienia warunków ustawowych — w tym limitu dopuszczalnej rekompensaty.</div>
+        </div>
+        <div class="faq-item" style="border:1px solid #DFE6E2;border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 5px 16px rgba(12,49,42,.09)">
+          <button type="button" class="faq-btn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit">
+            <span style="font-size:16px;font-weight:600;color:#12312A">Co finansujecie?</span>
+            <span class="faq-icon" style="width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:600;background:#F4F6F9;color:#6B7A92;border:1px solid #E2E6EC">+</span>
+          </button>
+          <div class="faq-ans" style="display:none;padding:0 20px 20px;font-size:14.5px;color:#5C6B82;line-height:1.6">Wyłącznie budownictwo społeczne i komunalne — mieszkania na najem o umiarkowanym czynszu. Nie finansujemy mieszkań budowanych na sprzedaż ani inwestycji komercyjnych.</div>
+        </div>
+        <div class="faq-item" style="border:1px solid #DFE6E2;border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 5px 16px rgba(12,49,42,.09)">
+          <button type="button" class="faq-btn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit">
+            <span style="font-size:16px;font-weight:600;color:#12312A">Mam małą działkę / małą gminę — ma to sens?</span>
+            <span class="faq-icon" style="width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:600;background:#F4F6F9;color:#6B7A92;border:1px solid #E2E6EC">+</span>
+          </button>
+          <div class="faq-ans" style="display:none;padding:0 20px 20px;font-size:14.5px;color:#5C6B82;line-height:1.6">Często tak. Interesują nas również mniejsze gminy — nie trzeba być dużym miastem, żeby zbudować potrzebne mieszkania. Analiza jest bezpłatna, więc sprawdzenie nic nie kosztuje.</div>
+        </div>
+        <div class="faq-item" style="border:1px solid #DFE6E2;border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 5px 16px rgba(12,49,42,.09)">
+          <button type="button" class="faq-btn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit">
+            <span style="font-size:16px;font-weight:600;color:#12312A">Kto dostaje finansowanie?</span>
+            <span class="faq-icon" style="width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:600;background:#F4F6F9;color:#6B7A92;border:1px solid #E2E6EC">+</span>
+          </button>
+          <div class="faq-ans" style="display:none;padding:0 20px 20px;font-size:14.5px;color:#5C6B82;line-height:1.6">Środki pochodzą z programów publicznych. Pomagamy ułożyć montaż finansowy, prowadzimy rozmowy z gminą, a wybranym projektom — po pozytywnej analizie — zapewniamy finansowanie oraz brakujący wkład własny.</div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. FINALNE CTA ============ -->
+    <section style="max-width:1180px;margin:74px auto 0;padding:0 28px">
+      <div style="position:relative;overflow:hidden;background:#0C2A21;border-radius:20px;padding:56px 48px;text-align:center">
+        <div style="position:absolute;inset:0;background:radial-gradient(800px 400px at 50% -30%,#174535,#0C2A21)"></div>
+        <div style="position:absolute;inset:0;background-image:url('szkic-budynku-mieta.png');background-size:110% auto;background-position:center 92%;background-repeat:no-repeat;opacity:.14"></div>
+        <div style="position:relative">
+          <h2 style="margin:0;font-size:34px;font-weight:600;color:#fff;letter-spacing:-.02em;line-height:1.16">Twoja działka może być gotowym<br>projektem mieszkalnictwa społecznego.</h2>
+          <p style="margin:14px auto 0;font-size:16px;color:#AFC0D6;line-height:1.55;max-width:520px">Sprawdź — nic nie ryzykujesz. Analiza wstępna jest bezpłatna i bez zobowiązań.</p>
+          <div style="display:flex;align-items:center;justify-content:center;gap:13px;margin-top:28px;flex-wrap:wrap">
+            <a href="#formularz" style="display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 30px;background:#0F4A38;color:#fff;border-radius:12px;font-size:16.5px;font-weight:600;box-shadow:0 6px 20px rgba(15,74,56,.4)">Sprawdź działkę za darmo <span style="opacity:.8">→</span></a>
+            <a href="#kontakt" style="display:inline-flex;align-items:center;height:56px;padding:0 24px;border:1px solid rgba(255,255,255,.28);border-radius:12px;font-size:15px;font-weight:500;color:#E7EEF6">Umów rozmowę</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 11. ŹRÓDŁA ============ -->
+    <section id="zrodla" style="max-width:1180px;margin:0 auto;padding:64px 28px 0">
+      <div style="border:1px solid #DFE6E2;border-radius:14px;overflow:hidden;box-shadow:0 6px 20px rgba(12,49,42,.10)">
+        <button type="button" id="sourcesBtn" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;background:#FAFBFC;border:none;cursor:pointer;text-align:left;font-family:inherit">
+          <span>
+            <span style="display:block;font-size:17px;font-weight:600;color:#12312A">Źródła danych i liczb</span>
+            <span style="display:block;font-size:13px;color:#6B7A92;margin-top:3px">Instytucja · rok · domena — każda liczba ze skali programów ma pokrycie</span>
+          </span>
+          <span id="sourcesIcon" style="width:30px;height:30px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:600;background:#12312A;color:#fff;border:1px solid #12312A">−</span>
+        </button>
+        <div id="sourcesBody" style="padding:8px 24px 22px">
+          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
+            <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">BGK</b> — Fundusz Dopłat i wsparcie budownictwa społecznego — komunikaty programowe</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">bgk.pl</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
+            <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">MRiT</b> — Programy mieszkaniowe, SIM, skala lokalizacji i mieszkań</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">gov.pl</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
+            <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">Rada Ministrów / MRiT</b> — Deklarowany wzrost limitu wydatków budżetowych na budownictwo społeczne — docelowo do 10 mld zł rocznie do 2030 r.</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">gov.pl</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
+            <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">GUS</b> — Dane demograficzne i mieszkaniowe (BDL)</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">stat.gov.pl</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2026</span>
+            <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">Europejski Bank Inwestycyjny</b> — Finansowanie mieszkalnictwa dostępnego, program z BGK</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">eib.org</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
+            <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">Komisja Europejska</b> — Europejski Plan Dostępnych Mieszkań, InvestEU</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">ec.europa.eu</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
+            <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">EBOR</b> — Finansowanie infrastruktury i mieszkalnictwa w regionie</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">ebrd.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- sticky CTA (mobile) -->
+  <div id="stickyCta" style="position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px 16px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-top:1px solid #DFE6E2">
+    <a href="#formularz" style="display:flex;align-items:center;justify-content:center;gap:9px;height:52px;background:#0F4A38;color:#fff;border-radius:11px;font-size:16px;font-weight:600">Sprawdź działkę za darmo <span style="opacity:.8">→</span></a>
+  </div>
+
+  <!-- ============ 12. STOPKA ============ -->
+  <footer id="kontakt" style="background:#071B15;color:#8FA3BE;padding:52px 28px 40px;margin-top:64px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:34px;flex-wrap:wrap;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.10)">
+        <div style="max-width:320px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <img src="logo-sle.png" alt="Social Living Europe" style="width:40px;height:40px;object-fit:contain;object-position:top;flex-shrink:0;filter:brightness(1.35)">
+            <div style="line-height:1.05">
+              <div style="font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:18px;color:#fff">Social Living</div>
+              <div style="font-size:9.5px;letter-spacing:.28em;color:#C89B4A;margin-top:3px;text-transform:uppercase;font-weight:600">Europe</div>
+            </div>
+          </div>
+          <div style="font-size:13px;line-height:1.6">Bezpłatna wstępna analiza gruntów pod budownictwo społeczne i komunalne. Wybranym projektom zapewniamy finansowanie, wkład własny i prowadzenie rozmów z samorządem.</div>
+          <a href="#formularz" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px;margin-top:18px;background:#0F4A38;color:#fff;border-radius:10px;font-size:14px;font-weight:600">Sprawdź działkę za darmo →</a>
+        </div>
+        <div style="display:flex;gap:52px;flex-wrap:wrap">
+          <div>
+            <div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6B7A92;font-weight:600;margin-bottom:13px">Strona</div>
+            <div style="display:flex;flex-direction:column;gap:9px;font-size:13.5px">
+              <a href="#jak" style="color:#AFC0D6">Jak to działa</a>
+              <a href="#finansowanie" style="color:#AFC0D6">Finansowanie</a>
+              <a href="#skala" style="color:#AFC0D6">Skala programów</a>
+              <a href="#dlakogo" style="color:#AFC0D6">Dla kogo</a>
+              <a href="#faq" style="color:#AFC0D6">FAQ</a>
+              <a href="#zrodla" style="color:#AFC0D6">Źródła</a>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6B7A92;font-weight:600;margin-bottom:13px">Kontakt</div>
+            <div style="display:flex;flex-direction:column;gap:9px;font-size:13.5px;color:#AFC0D6">
+              <a href="mailto:kontakt@socialliving.eu" style="color:#AFC0D6">kontakt@socialliving.eu</a>
+              <a href="#formularz" style="color:#AFC0D6">Umów rozmowę</a>
+              <a href="#dlakogo" style="color:#AFC0D6">Współpraca dla biur</a>
+              <a href="#samorzad" style="color:#AFC0D6">Dla samorządów</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZASTRZEŻENIA PRAWNE -->
+      <div style="padding-top:28px">
+        <div id="stopka-zastrzezenia" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6B7A92;font-weight:600;margin-bottom:16px">Zastrzeżenia prawne</div>
+        <div style="display:flex;flex-direction:column;gap:12px;max-width:980px">
+          <div style="display:flex;gap:11px;font-size:12.5px;line-height:1.65;color:#8FA3BE">
+            <span style="color:#4E627D;flex-shrink:0">—</span><span>Aplikacja jest narzędziem wstępnej analizy (sito) opartym na danych publicznych — nie stanowi doradztwa prawnego, podatkowego ani finansowego, ani wiążącej oferty finansowania.</span>
+          </div>
+          <div style="display:flex;gap:11px;font-size:12.5px;line-height:1.65;color:#8FA3BE">
+            <span style="color:#4E627D;flex-shrink:0">—</span><span>Poziomy finansowania („do 100%”, „do 35%”, „do 80%”) to maksymalne, warunkowe wartości dla budownictwa społecznego i komunalnego. Rzeczywisty poziom zależy od projektu, lokalizacji, formy współpracy z gminą i spełnienia warunków ustawowych, w tym limitu dopuszczalnej rekompensaty (grant i kredyt nie mogą przekroczyć kosztu netto usługi powiększonego o rozsądny zysk).</span>
+          </div>
+          <div style="display:flex;gap:11px;font-size:12.5px;line-height:1.65;color:#8FA3BE">
+            <span style="color:#4E627D;flex-shrink:0">—</span><span>Finansujemy lub kierujemy do finansowania wybrane projekty — po pozytywnej analizie i kwalifikacji. Dla wybranych projektów możemy również zapewnić brakujący wkład własny; nie jest to zobowiązanie ani wiążąca oferta, a decyzja następuje po kwalifikacji i uzgodnieniu warunków.</span>
+          </div>
+          <div style="display:flex;gap:11px;font-size:12.5px;line-height:1.65;color:#8FA3BE">
+            <span style="color:#4E627D;flex-shrink:0">—</span><span>Finansowanie dotyczy wyłącznie budownictwa społecznego i komunalnego (najem o umiarkowanym czynszu) i wymaga współpracy z właściwym samorządem. Wsparcie w prowadzeniu rozmów z gminą nie gwarantuje zawarcia umowy ani uzyskania finansowania.</span>
+          </div>
+          <div style="display:flex;gap:11px;font-size:12.5px;line-height:1.65;color:#8FA3BE">
+            <span style="color:#4E627D;flex-shrink:0">—</span><span>Część parametrów zależy od aktualnych i projektowanych przepisów — mogą ulec zmianie.</span>
+          </div>
+        </div>
+        <div style="font-size:12px;color:#4E627D;margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)">© 2026 Social Living Europe · Narzędzie wstępnej analizy oparte na danych publicznych.</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  // FAQ accordion — odpowiedniki toggle() z referencji
+  document.querySelectorAll('.faq-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var ans = item.querySelector('.faq-ans');
+      var icon = item.querySelector('.faq-icon');
+      var open = ans.style.display === 'none' || ans.style.display === '';
+      ans.style.display = open ? 'block' : 'none';
+      icon.textContent = open ? '−' : '+';
+      icon.style.background = open ? '#12312A' : '#F4F6F9';
+      icon.style.color = open ? '#fff' : '#6B7A92';
+      icon.style.borderColor = open ? '#12312A' : '#E2E6EC';
+    });
+  });
+
+  // Źródła — accordion (domyślnie otwarty)
+  (function(){
+    var btn = document.getElementById('sourcesBtn');
+    var body = document.getElementById('sourcesBody');
+    var icon = document.getElementById('sourcesIcon');
+    btn.addEventListener('click', function(){
+      var open = body.style.display === 'none';
+      body.style.display = open ? 'block' : 'none';
+      icon.textContent = open ? '−' : '+';
+      icon.style.background = open ? '#12312A' : '#fff';
+      icon.style.color = open ? '#fff' : '#6B7A92';
+      icon.style.borderColor = open ? '#12312A' : '#DFE6E2';
+    });
+  })();
+</script>
+</body>
+</html>
