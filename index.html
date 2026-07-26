@@ -19,7 +19,7 @@
   #stickyCta{display:none}
   @media (max-width:720px){
     #stickyCta{display:flex}
-    #navCta{display:none}
+    #navCta{display:none!important}
     body{padding-bottom:78px}
   }
 </style>
@@ -57,13 +57,13 @@
       <div style="position:absolute;inset:0;background-image:url('szkic-budynku-mieta.png');background-size:118% auto;background-position:center 84%;background-repeat:no-repeat;opacity:.22"></div>
       <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,21,38,.35),rgba(10,21,38,.10) 40%,rgba(10,21,38,.62))"></div>
 
-      <div style="position:relative;max-width:1180px;margin:0 auto;padding:66px 28px 62px;display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:52px;align-items:center">
+      <div style="position:relative;max-width:1180px;margin:0 auto;padding:66px 28px 62px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:52px;align-items:center">
         <div>
           <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border:1px solid rgba(255,255,255,.22);border-radius:22px;background:rgba(255,255,255,.07);margin-bottom:24px">
             <span style="width:7px;height:7px;border-radius:50%;background:#C89B4A"></span>
             <span style="font-size:12.5px;color:#CFE0F1;font-weight:500">Wyłącznie budownictwo społeczne i komunalne · najem o umiarkowanym czynszu</span>
           </div>
-          <h1 style="margin:0;font-size:46px;line-height:1.07;font-weight:600;letter-spacing:-.025em;color:#fff">Nawet do 100% finansowania<br>Twojego projektu<br><span style="color:#C89B4A">mieszkalnictwa społecznego</span><a href="#zastrzezenia" style="color:#C89B4A;font-size:26px;vertical-align:super">*</a></h1>
+          <h1 style="margin:0;font-size:clamp(30px,9vw,46px);line-height:1.07;font-weight:600;letter-spacing:-.025em;color:#fff;overflow-wrap:break-word">Nawet do 100% finansowania<br>Twojego projektu<br><span style="color:#C89B4A">mieszkalnictwa społecznego</span><a href="#zastrzezenia" style="color:#C89B4A;font-size:26px;vertical-align:super">*</a></h1>
           <p style="margin:20px 0 0;font-size:16.5px;line-height:1.6;color:#AFC0D6;max-width:530px">Analizujemy grunty pod budownictwo społeczne i komunalne — demografia, infrastruktura, koszty, model zabudowy i montaż finansowy. <b style="color:#E7EEF6;font-weight:600">Wybranym projektom zapewniamy finansowanie — również wkład własny<a href="#zastrzezenia" style="color:#C89B4A">*</a>.</b></p>
 
           <div style="display:flex;align-items:center;gap:13px;margin-top:28px;flex-wrap:wrap">
@@ -103,7 +103,7 @@
       <div style="max-width:840px;margin-bottom:42px">
         <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.2;text-wrap:balance">Nie każda działka nadaje się pod mieszkalnictwo społeczne. My mówimy Ci to <span style="color:#0F4A38">zanim</span> wydasz pieniądze.</h2>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:22px">
         <div style="border:1px solid #DFE6E2;border-radius:14px;padding:24px;background:#fff;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
           <div style="width:44px;height:44px;border-radius:11px;background:#EAF4EF;color:#0F4A38;display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:16px">◎</div>
           <div style="font-size:17px;font-weight:600;margin-bottom:7px">Potencjał</div>
@@ -132,7 +132,7 @@
           <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Jak to działa</div>
           <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Od działki do gotowego montażu finansowego — w trzech krokach.</h2>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:22px">
           <div style="background:#fff;border:1px solid #DFE6E2;border-radius:14px;padding:24px;position:relative">
             <div style="display:flex;align-items:center;gap:13px;margin-bottom:15px">
               <div style="width:42px;height:42px;border-radius:11px;background:#12312A;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600">1</div>
@@ -169,7 +169,7 @@
         <p style="margin:18px 0 0;font-size:16px;color:#5C6B82;line-height:1.6">Budownictwo społeczne i komunalne korzysta z <b style="color:#12312A;font-weight:600">bezzwrotnych grantów</b>, <b style="color:#12312A;font-weight:600">kredytu preferencyjnego</b> (stałe niskie oprocentowanie, długi okres) i <b style="color:#12312A;font-weight:600">partycypacji najemców</b>. Dobrze ułożony montaż potrafi pokryć prawie cały koszt przedsięwzięcia — Twój wkład własny może zejść do minimum, zwłaszcza gdy grunt wnosisz aportem.</p>
       </div>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:22px">
         <div style="border:1px solid #DFE6E2;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(12,49,42,.10),0 1px 2px rgba(12,49,42,.06)">
           <div style="height:4px;background:#0F4A38"></div>
           <div style="padding:22px 24px 24px">
@@ -214,7 +214,7 @@
 
     <!-- ============ 4b. WSPÓŁPRACA Z SAMORZĄDEM ============ -->
     <section id="samorzad" style="background:#F4F8F6;border-top:1px solid #DCE6E1;border-bottom:1px solid #DCE6E1;margin-top:74px"><div style="max-width:1180px;margin:0 auto;padding:66px 28px">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:44px;align-items:start">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr));gap:44px;align-items:start">
         <div>
           <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Warunek konieczny</div>
           <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Bez samorządu nie ma budownictwa społecznego.<br><span style="color:#0F4A38">Te rozmowy prowadzimy za Ciebie.</span></h2>
@@ -272,7 +272,7 @@
           <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16;color:#fff">Publiczne pieniądze na mieszkania już są w systemie.</h2>
           <p style="margin:14px 0 0;font-size:15.5px;color:#AFC0D6;line-height:1.6">Pytanie nie brzmi „czy jest finansowanie”, ale „czy Twoja działka do niego pasuje”.</p>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px">
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
             <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">8,7 mld zł</div>
             <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">Wsparcie budownictwa społecznego — skala programowa</div>
@@ -309,7 +309,7 @@
           <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#C89B4A;font-weight:600;margin-bottom:12px">Skala programów · Europa</div>
           <h2 style="margin:0;font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.18;color:#fff">Mieszkalnictwo dostępne to dziś priorytet europejski.</h2>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:16px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(185px,100%),1fr));gap:16px">
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 18px;backdrop-filter:blur(6px)">
             <div style="font-size:28px;font-weight:600;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1">6 mld €</div>
             <div style="font-size:13px;color:#CFE0F1;margin-top:9px;line-height:1.45">EBI na mieszkalnictwo dostępne (2026)</div>
@@ -346,7 +346,7 @@
         <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Dla kogo</div>
         <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Dla każdego, kto ma grunt albo szuka projektu.</h2>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:20px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:20px">
         <div style="position:relative;border:1px solid #DFE6E2;border-radius:14px;padding:24px;background:#fff;box-shadow:0 1px 2px rgba(20,38,63,.04)">
           <div style="display:flex;align-items:center;gap:13px;margin-bottom:13px">
             <div style="width:42px;height:42px;border-radius:11px;background:#EEF1F5;color:#3A4D6B;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">⌂</div>
@@ -390,7 +390,7 @@
           <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0F4A38;font-weight:600;margin-bottom:12px">Dlaczego my</div>
           <h2 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.16">Najpierw fakty, potem decyzja.</h2>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:20px">
           <div>
             <div style="width:38px;height:38px;border-radius:10px;background:#fff;border:1px solid #DFE6E2;display:flex;align-items:center;justify-content:center;font-size:16px;color:#0F4A38;margin-bottom:14px">⊘</div>
             <div style="font-size:16px;font-weight:600;margin-bottom:7px">Sito, nie sprzedaż na siłę</div>
@@ -491,37 +491,37 @@
           <span id="sourcesIcon" style="width:30px;height:30px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:600;background:#12312A;color:#fff;border:1px solid #12312A">−</span>
         </button>
         <div id="sourcesBody" style="padding:8px 24px 22px">
-          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
             <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">BGK</b> — Fundusz Dopłat i wsparcie budownictwa społecznego — komunikaty programowe</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">bgk.pl</span>
           </div>
-          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
             <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">MRiT</b> — Programy mieszkaniowe, SIM, skala lokalizacji i mieszkań</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">gov.pl</span>
           </div>
-          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
             <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">Rada Ministrów / MRiT</b> — Deklarowany wzrost limitu wydatków budżetowych na budownictwo społeczne — docelowo do 10 mld zł rocznie do 2030 r.</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">gov.pl</span>
           </div>
-          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
             <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">GUS</b> — Dane demograficzne i mieszkaniowe (BDL)</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">stat.gov.pl</span>
           </div>
-          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2026</span>
             <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">Europejski Bank Inwestycyjny</b> — Finansowanie mieszkalnictwa dostępnego, program z BGK</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">eib.org</span>
           </div>
-          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid #F2F4F7">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
             <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">Komisja Europejska</b> — Europejski Plan Dostępnych Mieszkań, InvestEU</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">ec.europa.eu</span>
           </div>
-          <div style="display:flex;align-items:baseline;gap:14px;padding:12px 0">
+          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding:12px 0">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#12312A;background:#F4F6F9;border:1px solid #E2E6EC;padding:3px 9px;border-radius:6px;min-width:86px;text-align:center;flex-shrink:0">2025</span>
             <span style="flex:1;font-size:13.5px;color:#3A4D6B;line-height:1.5"><b style="color:#12312A;font-weight:600">EBOR</b> — Finansowanie infrastruktury i mieszkalnictwa w regionie</span>
             <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8E9BAE">ebrd.com</span>
